@@ -1,30 +1,21 @@
-export class Errors {
-  // Throw error ILLEGAL_PARAMETERS when cannot instantiate from given parameter
+export class ErrorMessage {
   static get ILLEGAL_PARAMETERS(): ReferenceError {
     return new ReferenceError("Illegal Parameters");
-  }
-
-  // Throw error ZERO_DIVISION to catch situation of zero division
-  static get ZERO_DIVISION(): Error {
-    return new Error("Zero division");
-  }
-
-  // Error to throw from BooleanOperations module in case when fixBoundaryConflicts not capable to fix it
-  static get UNRESOLVED_BOUNDARY_CONFLICT(): Error {
-    return new Error("Unresolved boundary conflict in boolean operation");
-  }
-
-  // Error to throw from LinkedList:testInfiniteLoop static method in case when circular loop detected in linked list
-  static get INFINITE_LOOP(): Error {
-    return new Error("Infinite loop");
   }
 
   static get CANNOT_INVOKE_ABSTRACT_METHOD() {
     return new Error("Abstract method cannot be invoked");
   }
 
-  static get OPERATION_IS_NOT_SUPPORTED() {
-    return new Error("Operation is not supported");
+  static get NO_NAME() {
+    return new Error("An abstract class 'Shape' does not have a name");
+  }
+
+  static get POLYGON_SIDE_COUNT() {
+    return new Error("A polygon should have more than 4 sides");
+  }
+
+  static get NEGATIVE_OR_ZERO() {
+    return new Error(`Dimensions and multipliers should not be zero or less`);
   }
 }
-
