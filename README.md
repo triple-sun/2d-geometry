@@ -5,7 +5,7 @@ A library for creation and manipulation of basic 2-dimensional geometric shapes
 ## Install
 
 ```
-npm install @triplesun/geometry
+npm install triplesun-2d-geometry -D
 ```
 
 ## Usage
