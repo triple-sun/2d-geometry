@@ -4,7 +4,7 @@ import { ShapeName } from "../utils/enums";
 import { Shape } from "./shape";
 
 /**
- * Triangle shape
+ * A class that represents a triangle
  */
 export class Triangle extends Shape {
   /**

@@ -4,7 +4,7 @@ import { Shape } from "./shape";
 import { Triangle } from "./triangle";
 
 /**
- * A Class that represents a Rectangle
+ * A Class that represents a rectangle
  */
 export class Rectangle extends Shape {
   /**

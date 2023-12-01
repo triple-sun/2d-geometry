@@ -3,6 +3,9 @@ import { ShapeName } from "../utils/enums";
 import { ErrorMessage } from "../utils/errors";
 import { Rectangle } from "./rectangle";
 
+/**
+ * A class representing a square 
+ */
 export class Square extends Rectangle {
   /**
    * {@inheritDoc Shape."constructor"}
