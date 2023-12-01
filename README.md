@@ -14,7 +14,6 @@ npm install @triplesun/geometry
 
 - `Shape` is a class that creates a shape based on required dimesions
 
-
 **Returns** shape that has methods `.clone() .multiply() .area .diameter .perimeter`
 
 - `.clone()` and `.multiply()` return new shape instance based on an existing one
@@ -24,14 +23,20 @@ npm install @triplesun/geometry
 ## Example
 
 ```js
-import {Circle, Polygon, Rectangle, Square, Triangle}  from '@triplesun/geometry'
+import {
+  Circle,
+  Polygon,
+  Rectangle,
+  Square,
+  Triangle,
+} from "@triplesun/geometry";
 
-const circle = new Circle(123, 0)
+const circle = new Circle(123, 0);
 console.log(circle.area);
 ```
 
 ### Output
 
 ```js
-47529
+47529;
 ```

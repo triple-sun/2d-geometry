@@ -1,9 +1,13 @@
 {
   "name": "triplesun-2d-geometry",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Provides basic geometric objects and operations",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/triple-sun/2d-geometry.git"
+  },
   "scripts": {
     "build": "tsc",
     "lint": "eslint -f unix \"src/**/*.{ts,tsx}\""
