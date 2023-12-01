@@ -1,5 +1,4 @@
-geometry
-============
+# Geometry
 
 A library for creation and manipulation of basic 2-dimensional geometric shapes
 
@@ -31,7 +30,7 @@ const circle = new Circle(123, 0)
 console.log(circle.area);
 ```
 
-Output:
+### Output
 
 ```js
 47529
