@@ -9,7 +9,7 @@
     "url": "https://github.com/triple-sun/2d-geometry.git"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
     "lint": "eslint -f unix \"src/**/*.{ts,tsx}\""
   },
   "files": [
@@ -23,6 +23,7 @@
     "eslint": "^8.54.0",
     "eslint-plugin-tsdoc": "^0.2.17",
     "minami": "^1.2.3",
+    "rimraf": "^5.0.5",
     "typescript": "^5.3.2"
   }
 }
