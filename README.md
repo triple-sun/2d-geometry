@@ -14,6 +14,8 @@ npm install @triplesun/geometry
 ### `const { Shape } = Geometry`
 
 - `Shape` is a class that creates a shape based on required dimesions
+
+
 **Returns** shape that has methods `.clone() .multiply() .area .diameter .perimeter`
 
 - `.clone()` and `.multiply()` return new shape instance based on an existing one

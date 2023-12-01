@@ -1,5 +1,5 @@
 {
-  "name": "@triplesun/geometry",
+  "name": "@triplesun/2d-geometry",
   "version": "0.1",
   "description": "Provides basic geometric objects and operations",
   "main": "dist/index.js",
