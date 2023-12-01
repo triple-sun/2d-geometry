@@ -33,9 +33,8 @@ export class Polygon extends Shape {
     if (sideCount < POLYGON_SIDES_MIN) {
       throw ErrorMessage.POLYGON_SIDE_COUNT;
     }
-
-    this.precision = precision;
-    this.sideCount = sideCount;
+    
+    this.sideCount = parseInt(sideCount.toFixed(0));
     this.side = side;
   }
 

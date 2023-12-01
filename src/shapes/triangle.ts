@@ -1,3 +1,4 @@
+import { validateTriangle } from "./../utils/utils";
 import { ErrorMessage } from "./../utils/errors";
 import { PRECISION_DEFAULT } from "../utils/const";
 import { ShapeName } from "../utils/enums";
@@ -16,6 +17,9 @@ export class Triangle extends Shape {
    *
    * @throws {@link ErrorMessage.NEGATIVE_OR_ZERO}
    * Is thrown if any of the sides is negative or zero
+   *
+   * @throws {@link ErrorMessage.NEGATIVE_OR_ZERO}
+   * Is thrown if the longest side is too long
    */
   constructor(
     public side1: number,
@@ -27,6 +31,10 @@ export class Triangle extends Shape {
 
     if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
       throw ErrorMessage.NEGATIVE_OR_ZERO;
+    }
+
+    if (!validateTriangle(side1, side2, side3)) {
+      throw ErrorMessage.TRIANGLE_SIDES;
     }
 
     this.side1 = side1;
@@ -78,7 +86,9 @@ export class Triangle extends Shape {
    * {@inheritDoc Shape.perimeter}
    */
   public get perimeter() {
-    return this.side1 + this.side2 + this.side3;
+    return parseFloat(
+      (this.side1 + this.side2 + this.side3).toFixed(this.precision)
+    );
   }
 
   /**

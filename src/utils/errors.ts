@@ -16,6 +16,10 @@ export class ErrorMessage {
   }
 
   static get NEGATIVE_OR_ZERO() {
-    return new Error(`Dimensions and multipliers should not be zero or less`);
+    return new Error("Dimensions and multipliers should not be zero or less");
+  }
+
+  static get TRIANGLE_SIDES() {
+    return new Error(`Impossible to build a valid triangle with given side lengths`)
   }
 }

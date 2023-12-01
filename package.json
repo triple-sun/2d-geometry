@@ -1,6 +1,6 @@
 {
   "name": "triplesun-2d-geometry",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Provides basic geometric objects and operations",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

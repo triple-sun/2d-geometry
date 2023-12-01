@@ -9,7 +9,7 @@ export abstract class Shape {
    * @param precision - floating point operation precision
    */
   constructor(public precision: number) {
-    this.precision = precision;
+    this.precision = parseInt(precision.toFixed(0));
   }
 
   /**
